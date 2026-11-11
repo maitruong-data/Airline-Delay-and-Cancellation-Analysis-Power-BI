@@ -6,7 +6,6 @@ A Power BI project on 5.8 million US domestic flights in 2015. It looks at where
 - 📅 **Created:** November 2026
 - 🛠️ **Tool:** Power BI Desktop (Power Query, DAX)
 - 📂 **Dataset:** [2015 Flight Delays and Cancellations (Kaggle, from the US DOT)](https://www.kaggle.com/datasets/usdot/flight-delays)
-- 📊 **Interactive dashboard:** [add link when available]
 
 ## Table of Contents
 
