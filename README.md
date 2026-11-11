@@ -3,7 +3,7 @@
 A Power BI project on 5.8 million US domestic flights in 2015. It looks at where delays and cancellations come from, when they concentrate, and which airlines and airports drive them, then turns the findings into recommendations for airline operations.
 
 - **Author:** Mai Truong
-- **Created:** [add month and year]
+- **Created:** November 2026
 - **Tool:** Power BI Desktop (Power Query, DAX)
 - **Dataset:** [2015 Flight Delays and Cancellations (Kaggle, from the US DOT)](https://www.kaggle.com/datasets/usdot/flight-delays)
 - **Interactive dashboard:** [add link when available]
