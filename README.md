@@ -7,6 +7,16 @@ A Power BI project on 5.8 million US domestic flights in 2015. It looks at where
 - 🛠️ **Tool:** Power BI Desktop (Power Query, DAX)
 - 📂 **Dataset:** [2015 Flight Delays and Cancellations (Kaggle, from the US DOT)](https://www.kaggle.com/datasets/usdot/flight-delays)
 
+## 📊 Headline Numbers (2015)
+
+- ✈️ **5.82M** flights in the year
+- ✅ **4.69M** on-time arrivals (A15) and **4.71M** on-time departures (D15)
+- ⏱️ **61 min** average delay of a late flight
+- ❌ **1.54%** of flights cancelled and **0.26%** diverted
+- 🧭 **72%** of delay minutes are airline-caused, **23%** airport-caused and **5%** weather
+
+📄 [Download the full dashboard as a PDF](Airline-Delay-and-Cancellation-Analysis-Dashboard.pdf)
+
 ## Table of Contents
 
 1. 📌 [Overview](#-overview)
@@ -135,13 +145,25 @@ The Route Map page draws every route, with line width set by total arrival delay
 
 ### ✅ Recommendations
 
-| # | Recommendation | Reasoning |
-|---|---|---|
-| **R1** | Add schedule buffer to aircraft rotations in the busiest months (around June) and to the later flights of the day, and review the aircraft with the most knock-on delay first. | Late aircraft delay is the biggest airline-owned cause (Insight 1) and is highest in the busy mid-year months (Insight 2). A buffer stops one late flight from delaying the next. |
-| **R2** | Before winter, agree rebooking, crew and aircraft repositioning plans for the airports with the most cancellations (O'Hare, Dallas/Fort Worth, LaGuardia). | Weather is the largest cancellation cause (Insight 3) and cannot be removed. A plan agreed in advance shortens recovery time and reduces the number of stranded passengers. |
-| **R3** | Report airline-owned and airport-owned delay minutes as two separate KPIs in the regular operations review. Give the airline-owned one to internal teams (planning, crew, maintenance) with a target, and raise the airport-owned one in meetings with airports and air traffic control. | Airline-owned delay is more than double airport-owned delay (Insight 1), so internal action has the biggest effect. Airport-owned delay is still large at the hubs (Insight 5), and the airline cannot fix it alone. |
-| **R4** | Use delay rate (share of flights more than 15 minutes late) as the main reliability KPI when comparing airlines or routes, and review the airlines well above the group (JetBlue, Frontier, Spirit) against the best performers (Alaska, Delta). | Average delay minutes look similar across airlines, so they hide the gap. Delay rate shows it and matches what passengers experience (Insight 4). |
-| **R5** | At O'Hare, Atlanta and Denver, review peak-hour schedules for congestion and take air system delay to the airport and air traffic control as a shared problem. | Air system delay is the main cause at these hubs (Insight 5), and a schedule review is the lever the airline controls. Buffers (R1) alone will not remove congestion. |
+**R1. Add buffer time to aircraft schedules in the busiest months.**
+- **Action:** In June and the other peak months, leave more ground time between flights flown by the same aircraft. Start with the aircraft whose delays pass on to the most later flights.
+- **Why:** Late aircraft delay is the biggest single cause of delay (Insight 1) and it peaks mid-year (Insight 2). One late flight makes the next flight late. A buffer gives the aircraft time to catch up.
+
+**R2. Prepare winter cancellation plans at the airports hit hardest.**
+- **Action:** Before winter, agree in advance how to rebook passengers and move crews and aircraft at O'Hare, Dallas/Fort Worth and LaGuardia.
+- **Why:** Weather causes more than half of all cancellations (48.85K of 89.88K, Insight 3), and weather cannot be prevented. A plan that is ready before the storm makes recovery faster.
+
+**R3. Track airline-caused and airport-caused delay as two separate numbers.**
+- **Action:** Report both in the regular operations review. Give the airline-caused number to planning, crew and maintenance with a target. Raise the airport-caused number with airports and air traffic control.
+- **Why:** Airline-caused delay is 72% of delay minutes and airport-caused is 23%, so the airline controls about three times as much (Insight 1). The two have different owners and need different fixes.
+
+**R4. Judge airlines by how often flights are late, not by average delay minutes.**
+- **Action:** Use delay rate (share of flights more than 15 minutes late) as the main reliability measure. Compare JetBlue (22.07%), Frontier (25.50%) and Spirit (28.90%) with the best performers, Alaska (12.55%) and Delta (13.18%).
+- **Why:** Once a flight is late, it is late by a similar amount at most airlines, so average minutes hide the gap. Delay rate shows it: Spirit's flights are late more than twice as often as Alaska's (Insight 4).
+
+**R5. Review busy-hour schedules at the biggest hubs and work with air traffic control.**
+- **Action:** At O'Hare, Atlanta and Denver, check whether too many flights are scheduled in the same hours. Raise air system delay with the airport and air traffic control.
+- **Why:** At these hubs, air system delay (congestion and air traffic holds) is the main cause, ahead of weather (Insight 5). The airline can adjust its own schedule but cannot clear crowded airspace alone, and the buffer from R1 will not fix congestion.
 
 ## 🔧 Analysis Process
 
