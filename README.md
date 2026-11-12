@@ -56,7 +56,7 @@ These terms are used throughout the dashboard and this README.
 | **D15 (on-time departure)** | A flight that leaves no more than 15 minutes after its scheduled time. |
 | **Delayed flight** | A flight that arrives more than 15 minutes late. Anything inside the 15-minute margin counts as on time. |
 | **Delay rate** | Share of completed flights that arrived more than 15 minutes late. |
-| **Avg Delay of Late Flights (min)** | Average arrival delay of delayed flights only. It does not include on-time flights, so it describes how bad a late flight is, not how late the average flight is. |
+| **Avg Arrival Delay (min)** | Average arrival delay of delayed flights only. It does not include on-time flights, so it describes how bad a late flight is, not how late the average flight is. |
 
 ### 🚫 Other flight outcomes
 
