@@ -119,11 +119,13 @@ Of the cancellations on the dashboard, weather accounts for 48.85K, airline or c
 
 *Why it matters:* cancellations are mostly about conditions, while delays are mostly about knock-on effects. They need different plans: contingency planning for the first, buffer and recovery planning for the second.
 
-### 4️⃣ Insight 4: Some airlines are late far more often than others
+### 4️⃣ Insight 4: Regional airlines have their longest delays on early-morning flights
 
-Alaska (12.55%) and Delta (13.18%) are late least often. JetBlue (22.07%), Frontier (25.50%) and Spirit (28.90%) are late most often. Spirit's flights are late more than twice as often as Alaska's. Meanwhile, average delay minutes of late flights sit in a narrower band across airlines (roughly 40 to 70 minutes on the airline scatter).
+In the average arrival delay table by time of day, American Eagle and SkyWest reach 93 minutes in the 05-07 slot, and Atlantic Southeast reaches 81. For each of the three, that is the longest delay of any time slot. Most other airlines peak at other times of day (Frontier at 08-10 with 72, United at 17-19 with 69), and Alaska stays between 41 and 51 minutes all day. The 05-07 slot is not a small sample: it holds 19,258 American Eagle, 30,411 Atlantic Southeast and 35,813 SkyWest flights.
 
-*Why it matters:* once a flight is late, it is late by a similar amount at most airlines. What separates airlines is how often it happens. A passenger feels the frequency (how many trips go wrong), so an airline can look average on delay minutes and still disrupt far more flights. Since Insight 1 shows most delay is airline-controlled, these gaps are something airlines can act on.
+Airlines also differ in how often flights are late. Alaska (12.55%) and Delta (13.18%) are late least often. JetBlue (22.07%), Frontier (25.50%) and Spirit (28.90%) are late most often.
+
+*Why it matters:* a delay at the start of the day can carry into later flights, and late aircraft delay is the biggest cause overall (Insight 1). The dashboard shows when these flights are late, not why, so the first step is to look at what happens before the 05-07 flights.
 
 ![Airline Performance page](images/airline-performance.png)
 
@@ -133,7 +135,7 @@ The drill-through page shows the same view for one airline (here Southwest), inc
 
 ### 5️⃣ Insight 5: A few hubs account for the largest airport-side delay
 
-Chicago O'Hare leads on arrival delay minutes at 4.15M, followed by Atlanta (3.18M), Dallas/Fort Worth, Denver and Los Angeles. At O'Hare, air system delay (0.95M) is more than double weather delay (0.42M). Atlanta shows the same pattern (0.63M against 0.31M), and air system delay is the main cause at Denver (0.54M).
+Chicago O'Hare leads on arrival delay minutes at 4.15M, followed by Atlanta (3.18M), Dallas/Fort Worth, Denver and Los Angeles. At O'Hare, air system delay (0.95M) is more than double weather delay (0.42M). Atlanta shows the same pattern (0.63M against 0.31M), and air system delay is the main cause at Denver (0.54M), Dallas/Fort Worth and Los Angeles.
 
 *Why it matters:* two things point to congestion and airport operations, not weather or volume alone. First, air system delay is the main cause at these hubs, ahead of weather. Second, O'Hare handles fewer flights than Atlanta (0.29M against 0.35M) but has more delay minutes, so more traffic is not the whole story. O'Hare also has the most cancellations of any airport (8.5K). These airports need a different fix from an airline-wide schedule change.
 
@@ -157,13 +159,13 @@ The Route Map page draws every route, with line width set by total arrival delay
 - **Action:** Report both in the regular operations review. Give the airline-caused number to planning, crew and maintenance with a target. Raise the airport-caused number with airports and air traffic control.
 - **Why:** Airline-caused delay is 72% of delay minutes and airport-caused is 23%, so the airline controls about three times as much (Insight 1). The two have different owners and need different fixes.
 
-**R4. Judge airlines by how often flights are late, not by average delay minutes.**
-- **Action:** Use delay rate (share of flights more than 15 minutes late) as the main reliability measure. Compare JetBlue (22.07%), Frontier (25.50%) and Spirit (28.90%) with the best performers, Alaska (12.55%) and Delta (13.18%).
-- **Why:** Once a flight is late, it is late by a similar amount at most airlines, so average minutes hide the gap. Delay rate shows it: Spirit's flights are late more than twice as often as Alaska's (Insight 4).
+**R4. Review the first flights of the day at the three regional airlines.**
+- **Action:** for American Eagle, SkyWest and Atlantic Southeast, review the 05-07 flights: whether aircraft and crew are ready, whether overnight maintenance finishes in time, and how much time the first flights have between them.
+- **Why:** this is their longest-delay time slot, and an early delay can pass on to later flights (Insight 1). Because the dashboard does not show the cause, the first step is a review, not a fix.
 
-**R5. Review busy-hour schedules at the biggest hubs and work with air traffic control.**
-- **Action:** At O'Hare, Atlanta and Denver, check whether too many flights are scheduled in the same hours. Raise air system delay with the airport and air traffic control.
-- **Why:** At these hubs, air system delay (congestion and air traffic holds) is the main cause, ahead of weather (Insight 5). The airline can adjust its own schedule but cannot clear crowded airspace alone, and the buffer from R1 will not fix congestion.
+**R5. Review busy-hour schedules at the five biggest hubs and work with air traffic control.**
+- **Action:** at O'Hare, Atlanta, Dallas/Fort Worth, Denver and Los Angeles, check whether too many flights are scheduled in the same hours. Raise air system delay with the airport and air traffic control.
+- **Why:** at these five airports, air system delay (congestion and air traffic holds) is the main cause, ahead of weather (Insight 5). The airline can adjust its own schedule but cannot clear crowded airspace alone, and the buffer from R1 will not fix congestion.
 
 ## 🔧 Analysis Process
 
